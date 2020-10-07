@@ -6,6 +6,6 @@
     <title><?php bloginfo('name'); ?></title>
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
-
+</head>
 
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 
 <header class="header">
-<h1 id="logo"><a href="<?php echo get_template_directory_uri(); ?>index.php"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="SAMPLE COMPANY"></a></h1>
+<h1 id="logo"><a href="<?php echo get_template_directory_uri(); ?>/front-page.php"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="SAMPLE COMPANY"></a></h1>
 <nav id="menubar">
 <ul>
 <li><a href="company.html">Company</a></li>

@@ -6,7 +6,7 @@
     <title><?php bloginfo('name'); ?></title>
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
-    </head>
+</head>
 <div id="contents">
 <section>
 <h2>Pickup News<span>注目ニュース</span></h2>
@@ -14,7 +14,7 @@
 $args = array(
     'post_type' => 'post',
     'category_name'  => 'pickupnews',
-    'post_per_page' => 2,
+    'posts_per_page' => 2,
 );
 $the_query = new WP_Query($args);
 if( $the_query->have_posts() ): ?>
@@ -37,7 +37,7 @@ if( $the_query->have_posts() ): ?>
 $args = array(
     'post_type' => 'post',
     'category_name'  => 'news',
-    'post_per_page' => 5,
+    'posts_per_page' => 5,
 );
 $the_query = new WP_Query($args);
 if( $the_query->have_posts() ): ?>
