@@ -65,14 +65,8 @@ $args = array(
 $the_query = new WP_Query($args);
 if( $the_query->have_posts() ): ?>
         <?php while($the_query->have_posts() ) : $the_query->the_post(); ?>
-        <div class="list">
-            <div class="text">
-                <h4><?php the_date(); ?></h4>
-                <?php echo $date?>
-                <?php $date=the_title(); ?>
-                <p><?php the_content(); ?></p>
-            </div>
-        </div>
+        <h3><?php the_title(); ?></h3>
+        <p><?php the_content(); ?></p>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>
