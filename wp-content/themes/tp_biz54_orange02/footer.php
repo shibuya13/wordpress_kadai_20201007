@@ -1,5 +1,5 @@
+</div>
 <footer>
-
 <div id="footermenu">
 <ul>
 <li class="title">タイトル</li>
@@ -43,3 +43,4 @@
 <!--/#copyright-->
 
 </footer>
+</body>

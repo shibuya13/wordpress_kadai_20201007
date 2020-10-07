@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,6 +6,7 @@
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
 </head>
+<?php get_header(); ?>
 <div id="contents">
 <section>
 <h2>Pickup News<span>注目ニュース</span></h2>
@@ -71,5 +71,13 @@ if( $the_query->have_posts() ): ?>
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>
 </section>
+
 <?php get_footer(); ?>
+
+<aside id="mainimg">
+<div class="slide0">slide0</div>
+<div class="slide1">slide</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+</aside>
 
