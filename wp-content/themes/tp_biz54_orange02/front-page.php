@@ -42,14 +42,12 @@ $args = array(
 $the_query = new WP_Query($args);
 if( $the_query->have_posts() ): ?>
         <?php while($the_query->have_posts() ) : $the_query->the_post(); ?>
-        <div class="list">
-            <div class="text">
-                <h4><?php the_title(); ?></h4>
-                <h4><?php the_date(); ?></h4>
-                <?php echo $date?>
-                <?php $date=get_the_title(); ?>
-            </div>
-        </div>
+        <!-- <div class="list"> -->
+            <!-- <div class="text"> -->
+                <dt><?php the_date(); ?></dt>
+                <dd><?php the_title(); ?></dd>
+            <!-- </div> -->
+        <!-- </div> -->
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
@@ -57,7 +55,7 @@ if( $the_query->have_posts() ): ?>
     
     
 <section id="service">
-    <h2>更新情報・お知らせ</h2>
+    <h2>テンプレートのご利用前に必ずお読み下さい</h2>
     <?php 
 $args = array(
     'post_type' => 'post',
